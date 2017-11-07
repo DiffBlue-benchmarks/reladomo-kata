@@ -1,0 +1,723 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Results</title>
+  <style>
+    /* Standard styles */
+
+    body {
+      font-family: "Aial", sans-serif;
+      background-color: #EAF4F9;
+      color: black;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: bold;
+    }
+
+    p,
+    a,
+    table,
+    ul {
+      font-size: 12pt;
+    }
+
+    h4 {
+      font-size: 12pt;
+    }
+
+    h3 {
+      font-size: 14pt;
+    }
+
+    h2 {
+      font-size: 16pt;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    tt {
+      font-family: "Liberation Mono", monospace;
+    }
+
+    tt {
+      font-size: 10pt;
+    }
+
+    main {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    /* Table styling */
+
+    table {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    table,
+    th,
+    td {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px;
+    }
+
+    th {
+      background: #B5DEF2;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    td:first-child,
+    th:first-child {
+      border-right: 1px solid #36A9E0;
+    }
+
+    td:last-child,
+    th:last-child {
+      border-left: 1px solid #36A9E0;
+    }
+
+    td {
+      background: white;
+      padding: 8px 10px;
+    }
+
+    tr:not(:last-child) {
+      border-bottom: 1px solid #36A9E0;
+    }
+    /* Title wrapper */
+
+    .title-wrapper {
+      background: white;
+      padding: 5px 0;
+    }
+
+    .title-wrapper h1 {
+      max-width: 620px;
+      margin: 0 auto;
+      color: #0577BD;
+    }
+
+    .title-wrapper h1>span {
+      color: #0D3C62;
+    }
+    /* Status wrapper */
+
+    .status-wrapper {
+      margin-top: 10px;
+    }
+
+    .status-wrapper td {
+      background: none;
+    }
+
+    .status-wrapper a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    /* Status styles */
+
+    .failed {
+      background: #F1596B;
+      color: white;
+      font-weight: bold;
+    }
+    /* Traffic Lights */
+
+    [class^='circle'] {
+      width: 66px;
+      height: 66px;
+      border: 2px solid white;
+      border-radius: 100%;
+      color: white;
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      line-height: 66px;
+    }
+
+    .circle__failed {
+      background: #F1596B;
+    }
+
+    .circle__failed:before {
+      content: '\002715'
+    }
+
+    .circle__warning {
+      background: #F6A623;
+    }
+
+    .circle__warning:before {
+      content: '\0021'
+    }
+
+    .circle__success {
+      background: #7ED321;
+    }
+
+    .circle__success:before {
+      content: '\002713'
+    }
+  </style>
+</head>
+<body>
+  <div class="title-wrapper">
+    <h1>Results from the script <span>'diffblue_check.py'</span></h1>
+  </div>
+  <main>
+    <table style="border:hidden" class="status-wrapper">
+      <tr style="border:hidden">
+        <td style="border:hidden" width="66px">
+           <div class="circle__warning"></div>
+        </td>
+        <td style="border:hidden">The automated generation of unit tests can be used for your Java application. However, due to some calls to unsupported library functions (17.9%) the coverage might not be as high as it usually is. See the section <a href="#java_app_statistics">Java Project Statistics</a> bellow.</td>
+      </tr>
+    </table>
+    <h2 id="system_requirements">Checking system requirements</h2>
+    <h2 id="java_app_statistics">Java Project Statistics</h2>
+    <table>
+      <col width="340">
+      <col width="280">
+      <tr>
+        <th>Property</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Path to the checked Java application</td>
+        <td>/home/johnbergqvist/diffblue-benchmarks/reladomo-kata/</td>
+      </tr>
+      <tr>
+        <td>Uses Maven build system?</td>
+        <td>True</td>
+      </tr>
+      <tr>
+        <td>Number of Java classes</td>
+        <td>309</td>
+      </tr>
+      <tr>
+        <td>Number of methods in all classes</td>
+        <td>6628</td>
+      </tr>
+      <tr>
+        <td>Number of synchronized methods in all classes</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>Number of volatile elements in all classes</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Number of bytecodes in all methods</td>
+        <td>59307</td>
+      </tr>
+      <tr>
+        <td>Number of loops in all methods</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>Number of synchronized blocks in all methods</td>
+        <td>0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to java.util.concurrent classes (atomic / locks / thread / remaining)</td>
+        <td>0 / 0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to thread pool constructors (fixed / scheduled / fork_join)</td>
+        <td>0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to object synchronizers (wait / timed wait / notify / notifyAll)</td>
+        <td>0 / 0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of calls to thread elements (start / sleep / interrupt / join)</td>
+        <td>0 / 0 / 0 / 0</td>
+      </tr>
+      <tr>
+        <td>Number of method calls within the Java application</td>
+        <td>3835</td>
+      </tr>
+      <tr>
+        <td>Number of calls to the Java standard library</td>
+        <td>2535</td>
+      </tr>
+      <tr>
+        <td>Number of calls to other Java libraries</td>
+        <td>8871</td>
+      </tr>
+      <tr>
+        <td>Total number of calls in the Java application</td>
+        <td>15241</td>
+      </tr>
+      <tr>
+        <td>Number of calls to supported Java Standard Library functions</td>
+        <td>2081</td>
+      </tr>
+      <tr>
+        <td>Number of calls to unsupported Java Standard Library functions</td>
+        <td>454</td>
+      </tr>
+    </table>
+    <h2 id="non_modelled_library_calls">Calls to unsupported library functions</h2>
+    <table>
+      <col width="60">
+      <col width="660">
+      <col width="60">
+      <tr>
+        <th>#</th>
+        <th>Method name</th>
+        <th>#calls</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>java/sql/Timestamp.getTime:()J</td>
+        <td align="right">115</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>java/util/Calendar.set:(II)V</td>
+        <td align="right">56</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>java/sql/Timestamp.equals:(Ljava/sql/Timestamp;)Z</td>
+        <td align="right">43</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>java/util/Collections.unmodifiableList:(Ljava/util/List;)Ljava/util/List;</td>
+        <td align="right">36</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>java/sql/Timestamp.valueOf:(Ljava/lang/String;)Ljava/sql/Timestamp;</td>
+        <td align="right">30</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>java/sql/Timestamp."&lt;init&gt;":(J)V</td>
+        <td align="right">25</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>java/io/ObjectOutputStream.writeInt:(I)V</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>java/util/Calendar.getInstance:()Ljava/util/Calendar;</td>
+        <td align="right">15</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>java/util/Calendar.getTimeInMillis:()J</td>
+        <td align="right">12</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>java/util/Calendar.setTime:(Ljava/util/Date;)V</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>java/io/ObjectInputStream.readInt:()I</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>java/io/ObjectInputStream.readObject:()Ljava/lang/Object;</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>java/io/ObjectOutputStream.writeObject:(Ljava/lang/Object;)V</td>
+        <td align="right">8</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>java/lang/invoke/SerializedLambda.getFunctionalInterfaceClass:()Ljava/lang/String;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodName:()Ljava/lang/String;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>java/lang/invoke/SerializedLambda.getFunctionalInterfaceMethodSignature:()Ljava/lang/String;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>java/lang/invoke/SerializedLambda.getImplClass:()Ljava/lang/String;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>java/lang/invoke/SerializedLambda.getImplMethodKind:()I</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>java/lang/invoke/SerializedLambda.getImplMethodSignature:()Ljava/lang/String;</td>
+        <td align="right">6</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>java/util/Calendar.add:(II)V</td>
+        <td align="right">5</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>java/lang/ClassLoader.getResourceAsStream:(Ljava/lang/String;)Ljava/io/InputStream;</td>
+        <td align="right">4</td>
+      </tr>
+      <tr>
+        <td align="right">22</td>
+        <td>java/lang/invoke/SerializedLambda.getImplMethodName:()Ljava/lang/String;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">23</td>
+        <td>java/nio/file/Files.createTempFile:(Ljava/lang/String;Ljava/lang/String;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">24</td>
+        <td>java/nio/file/Files.readAllLines:(Ljava/nio/file/Path;)Ljava/util/List;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">25</td>
+        <td>java/util/TimeZone.getTimeZone:(Ljava/lang/String;)Ljava/util/TimeZone;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">26</td>
+        <td>java/util/stream/Collectors.joining:(Ljava/lang/CharSequence;)Ljava/util/stream/Collector;</td>
+        <td align="right">3</td>
+      </tr>
+      <tr>
+        <td align="right">27</td>
+        <td>java/sql/Date."&lt;init&gt;":(J)V</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">28</td>
+        <td>java/sql/Date.equals:(Ljava/lang/Object;)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">29</td>
+        <td>java/sql/Timestamp.after:(Ljava/sql/Timestamp;)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">30</td>
+        <td>java/util/Arrays.equals:([B[B)Z</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">31</td>
+        <td>java/util/Calendar.getTime:()Ljava/util/Date;</td>
+        <td align="right">2</td>
+      </tr>
+      <tr>
+        <td align="right">32</td>
+        <td>java/lang/Class.getDeclaredMethod:(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">33</td>
+        <td>java/sql/Timestamp.before:(Ljava/sql/Timestamp;)Z</td>
+        <td align="right">1</td>
+      </tr>
+      <tr>
+        <td align="right">34</td>
+        <td>java/util/Calendar.setTimeInMillis:(J)V</td>
+        <td align="right">1</td>
+      </tr>
+    </table>
+    <h2 id="other_library_calls">Other library classes used</h2>
+    <table>
+      <col width="60">
+      <col width="660">
+      <col width="60">
+      <tr>
+        <th>#</th>
+        <th>Class name</th>
+        <th>#calls</th>
+      </tr>
+      <tr>
+        <td align="right">1</td>
+        <td>com/gs/fw/common/mithra/util/MithraConfigurationManager$Config</td>
+        <td align="right">379</td>
+      </tr>
+      <tr>
+        <td align="right">2</td>
+        <td>org/junit/Assert</td>
+        <td align="right">269</td>
+      </tr>
+      <tr>
+        <td align="right">3</td>
+        <td>com/gs/fw/common/mithra/util/TimestampPool</td>
+        <td align="right">221</td>
+      </tr>
+      <tr>
+        <td align="right">4</td>
+        <td>com/gs/fw/common/mithra/util/MithraTimestamp</td>
+        <td align="right">199</td>
+      </tr>
+      <tr>
+        <td align="right">5</td>
+        <td>com/gs/fw/common/mithra/finder/FinderMethodMap</td>
+        <td align="right">184</td>
+      </tr>
+      <tr>
+        <td align="right">6</td>
+        <td>com/gs/fw/common/mithra/attribute/AsOfAttribute</td>
+        <td align="right">173</td>
+      </tr>
+      <tr>
+        <td align="right">7</td>
+        <td>com/gs/fw/common/mithra/behavior/DatedTransactionalBehavior</td>
+        <td align="right">148</td>
+      </tr>
+      <tr>
+        <td align="right">8</td>
+        <td>com/gs/fw/common/mithra/attribute/IntegerAttribute</td>
+        <td align="right">122</td>
+      </tr>
+      <tr>
+        <td align="right">9</td>
+        <td>com/gs/fw/common/mithra/list/DelegatingList</td>
+        <td align="right">122</td>
+      </tr>
+      <tr>
+        <td align="right">10</td>
+        <td>com/gs/fw/common/mithra/behavior/TransactionalBehavior</td>
+        <td align="right">114</td>
+      </tr>
+      <tr>
+        <td align="right">11</td>
+        <td>com/gs/fw/common/mithra/util/StringPool</td>
+        <td align="right">103</td>
+      </tr>
+      <tr>
+        <td align="right">12</td>
+        <td>kata/util/TimestampProvider</td>
+        <td align="right">81</td>
+      </tr>
+      <tr>
+        <td align="right">13</td>
+        <td>kata/domain/PersonFinder</td>
+        <td align="right">80</td>
+      </tr>
+      <tr>
+        <td align="right">14</td>
+        <td>com/gs/fw/common/mithra/cache/bean/I3O3L3</td>
+        <td align="right">76</td>
+      </tr>
+      <tr>
+        <td align="right">15</td>
+        <td>kata/domain/CustomerFinder</td>
+        <td align="right">64</td>
+      </tr>
+      <tr>
+        <td align="right">16</td>
+        <td>com/gs/collections/impl/test/Verify</td>
+        <td align="right">63</td>
+      </tr>
+      <tr>
+        <td align="right">17</td>
+        <td>kata/domain/PetFinder</td>
+        <td align="right">59</td>
+      </tr>
+      <tr>
+        <td align="right">18</td>
+        <td>bitemporalbank/domain/CustomerFinder</td>
+        <td align="right">58</td>
+      </tr>
+      <tr>
+        <td align="right">19</td>
+        <td>bitemporalbank/domain/CustomerAccountFinder</td>
+        <td align="right">57</td>
+      </tr>
+      <tr>
+        <td align="right">20</td>
+        <td>com/gs/fw/common/mithra/attribute/StringAttribute</td>
+        <td align="right">45</td>
+      </tr>
+      <tr>
+        <td align="right">21</td>
+        <td>kata/domain/Person</td>
+        <td align="right">45</td>
+      </tr>
+      <tr>
+        <td align="right">22</td>
+        <td>com/gs/fw/common/mithra/superclassimpl/MithraTransactionalObjectImpl</td>
+        <td align="right">41</td>
+      </tr>
+      <tr>
+        <td align="right">23</td>
+        <td>auditonlybank/domain/CustomerAccountFinder</td>
+        <td align="right">40</td>
+      </tr>
+      <tr>
+        <td align="right">24</td>
+        <td>com/gs/fw/common/mithra/connectionmanager/XAConnectionManager</td>
+        <td align="right">40</td>
+      </tr>
+      <tr>
+        <td align="right">25</td>
+        <td>kata/domain/AccountBalance</td>
+        <td align="right">40</td>
+      </tr>
+      <tr>
+        <td align="right">26</td>
+        <td>com/gs/fw/common/mithra/util/HashUtil</td>
+        <td align="right">39</td>
+      </tr>
+      <tr>
+        <td align="right">27</td>
+        <td>com/gs/fw/common/mithra/list/AbstractTransactionalNonOperationBasedList</td>
+        <td align="right">37</td>
+      </tr>
+      <tr>
+        <td align="right">28</td>
+        <td>com/gs/fw/common/mithra/MithraTransaction</td>
+        <td align="right">27</td>
+      </tr>
+      <tr>
+        <td align="right">29</td>
+        <td>kata/domain/CustomerAccountFinder</td>
+        <td align="right">27</td>
+      </tr>
+      <tr>
+        <td align="right">30</td>
+        <td>com/gs/fw/common/mithra/MithraManager</td>
+        <td align="right">23</td>
+      </tr>
+      <tr>
+        <td align="right">31</td>
+        <td>kata/domain/AllTypesFinder</td>
+        <td align="right">23</td>
+      </tr>
+      <tr>
+        <td align="right">32</td>
+        <td>simplebank/domain/CustomerFinder</td>
+        <td align="right">22</td>
+      </tr>
+      <tr>
+        <td align="right">33</td>
+        <td>kata/domain/CustomerList</td>
+        <td align="right">21</td>
+      </tr>
+      <tr>
+        <td align="right">34</td>
+        <td>kata/domain/Employee</td>
+        <td align="right">21</td>
+      </tr>
+      <tr>
+        <td align="right">35</td>
+        <td>kata/domain/TaskFinder</td>
+        <td align="right">21</td>
+      </tr>
+      <tr>
+        <td align="right">36</td>
+        <td>bitemporalbank/domain/Customer</td>
+        <td align="right">20</td>
+      </tr>
+      <tr>
+        <td align="right">37</td>
+        <td>kata/domain/PersonList</td>
+        <td align="right">20</td>
+      </tr>
+      <tr>
+        <td align="right">38</td>
+        <td>com/gs/fw/common/mithra/finder/AbstractRelatedFinder</td>
+        <td align="right">19</td>
+      </tr>
+      <tr>
+        <td align="right">39</td>
+        <td>org/slf4j/LoggerFactory</td>
+        <td align="right">19</td>
+      </tr>
+      <tr>
+        <td align="right">40</td>
+        <td>com/gs/fw/common/mithra/test/MithraTestResource</td>
+        <td align="right">17</td>
+      </tr>
+      <tr>
+        <td align="right">41</td>
+        <td>simplebank/domain/Customer</td>
+        <td align="right">17</td>
+      </tr>
+      <tr>
+        <td align="right">42</td>
+        <td>com/gs/fw/common/mithra/util/InternalList</td>
+        <td align="right">16</td>
+      </tr>
+      <tr>
+        <td align="right">43</td>
+        <td>bitemporalbank/domain/CustomerAccount</td>
+        <td align="right">14</td>
+      </tr>
+      <tr>
+        <td align="right">44</td>
+        <td>kata/domain/Pet</td>
+        <td align="right">14</td>
+      </tr>
+      <tr>
+        <td align="right">45</td>
+        <td>auditonlybank/domain/CustomerAccount</td>
+        <td align="right">12</td>
+      </tr>
+      <tr>
+        <td align="right">46</td>
+        <td>kata/domain/Customer</td>
+        <td align="right">10</td>
+      </tr>
+      <tr>
+        <td align="right">47</td>
+        <td>com/gs/fw/common/mithra/superclassimpl/MithraDatedTransactionalObjectImpl</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">48</td>
+        <td>kata/domain/AllTypes</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">49</td>
+        <td>kata/domain/TaskList</td>
+        <td align="right">9</td>
+      </tr>
+      <tr>
+        <td align="right">50</td>
+        <td>kata/domain/CustomerAccount</td>
+        <td align="right">8</td>
+      </tr>
+    </table>
+    <p>NOTE: the table shows the first 50 most popular calls out of 956 calls.</p>
+  </main>
+</body>
+</html>
