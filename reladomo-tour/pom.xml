@@ -121,8 +121,13 @@
                 <artifactId>jersey-container-grizzly2-http</artifactId>
                 <version>${jersey.grizzly.version}</version>
             </dependency>
-
-
+        
+            <dependency>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
